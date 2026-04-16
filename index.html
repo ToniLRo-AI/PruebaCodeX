@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FocusDepth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1, h2, h3 {
+      color: white;
+      line-height: 1.2;
+    }
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    p { color: #cbd5f5; margin: 1rem 0; }
+
+    .btn {
+      display: inline-block;
+      background: #6366f1;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: 0.2s;
+    }
+    .btn:hover {
+      background: #4f46e5;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .social-proof {
+      text-align: center;
+      padding: 1rem;
+      background: #1e293b;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .section {
+      padding: 4rem 0;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .faq {
+      margin-top: 2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .final-cta {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: #1e293b;
+      border-radius: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <h1>Your best work happens in 90 minutes.<br>Stop letting Slack steal them.</h1>
+    <p>
+      FocusDepth blocks every distraction, times your deep work sessions, and shows you exactly when your brain is at peak performance — so you ship more and burn out less.
+    </p>
+    <a href="#" class="btn">Start My First Deep Session — It's Free</a>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <div class="social-proof">
+    Trusted by 14,000 developers, writers, and analysts at companies like Notion, Linear, and Figma.
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="section container">
+    <h2>You're not lazy. Your environment is broken.</h2>
+    <p>
+      You sit down to do real work. Then a Slack ping. A browser tab. A "quick question" from a colleague. Forty minutes later, you haven't written a single line.
+    </p>
+    <p>
+      The science is clear: recovering from a single interruption takes over 20 minutes. Most knowledge workers never get a full hour of unbroken focus in an entire day.
+    </p>
+    <p>
+      That's not a personal failing. It's a design problem.
+    </p>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="section container">
+    <h2>FocusDepth builds the conditions where great work actually happens.</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Block everything, on a timer</h3>
+        <p>One click silences notifications, locks distracting sites, and starts a countdown. No willpower needed.</p>
+      </div>
+      <div class="card">
+        <h3>Track your focus patterns</h3>
+        <p>See which hours of the day you do your sharpest thinking, and protect them.</p>
+      </div>
+      <div class="card">
+        <h3>Streak accountability</h3>
+        <p>A 7-day focus streak is harder to break than any to-do list.</p>
+      </div>
+      <div class="card">
+        <h3>Session notes built in</h3>
+        <p>Capture what you shipped while the context is still fresh.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section container">
+    <h2>Three steps. No setup rabbit hole.</h2>
+    <div class="steps">
+      <div class="card">
+        <strong>1. Set your intention</strong>
+        <p>Name your task and pick a session length (25, 60, or 90 min).</p>
+      </div>
+      <div class="card">
+        <strong>2. Go deep</strong>
+        <p>FocusDepth locks your environment and runs your timer silently in the background.</p>
+      </div>
+      <div class="card">
+        <strong>3. Review your streak</strong>
+        <p>At the end of the week, see your total focus hours and your best performing time blocks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section container">
+    <h2>Common questions</h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        <strong>"What if I need to stay reachable?"</strong>
+        <p>You can whitelist specific contacts. Emergencies still get through. Everything else waits.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>"I've tried focus apps before and stopped using them."</strong>
+        <p>Most focus apps add friction. FocusDepth removes it — one shortcut to start, one dashboard to review. Nothing to configure every morning.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>"Is my data private?"</strong>
+        <p>Your session data never leaves your device. We don't sell it, analyze it, or touch it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="container">
+    <div class="final-cta">
+      <h2>90 minutes of real focus, every day. That's 450 hours a year.</h2>
+      <p>What would you build with that time?</p>
+      <a href="#" class="btn">Start Free — No Credit Card</a>
+      <p style="margin-top:1rem; font-size:0.9rem;">
+        Free forever for solo use. Upgrade only if you want team features.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 FocusDepth. Built for deep work.
+  </footer>
+
+</body>
+</html>
